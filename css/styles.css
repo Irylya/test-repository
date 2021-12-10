@@ -3,6 +3,31 @@ body {
   color: rgb(236, 79, 79);
 }
 
-.list {
+ul,
+li,
+p,
+h1 {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+}
+
+.list-item {
+  display: block;
+  width: 270px;
+  margin-left: 30px;
+}
+
+.list-item::before {
+  content: "";
+  display: block;
+  height: 150px;
+  background-image: url(../images/antenna.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
